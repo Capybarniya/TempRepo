@@ -10,7 +10,7 @@ def mp4_to_wav(video_path: str) -> None:
 
     ffmpeg.run(ffmpeg.output(stream.audio, 'audio.wav', ar=16000, ac=1, acodec='pcm_s16le'))
 
-def transcribe(audio_path: str) -> str:
+def transcribe(audio_path: str) -> list:
 
     model = whisper.load_model('medium')
 

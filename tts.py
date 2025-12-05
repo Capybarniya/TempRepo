@@ -47,7 +47,7 @@ def to_txt(text_massive: list) -> None:
 
 
 def main():
-    mp4_to_wav('Питчинг в Министерстве культуры России [get.gt].mp4')
+    mp4_to_wav('Питчинг.mp4')
     to_txt(transcribe('audio.wav'))
     #print(*transcribe('audio.wav'), sep='\n')s
 
